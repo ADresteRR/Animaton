@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .back{
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            background: linear-gradient(black,blue,lightblue,yellow);
+        }
+        .star{
+            position:absolute;
+            display:block;
+            border-radius:50%;
+            background-color: white;
+            width:30px;
+            height:30px;
+            margin-left:30%;
+            margin-top:25%;
+            animation-name: twinkle;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        @keyframes twinkle{
+            50%{
+                transform:scale(0.5);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div class="star-1 star">
+
+        </div>
+    </div>
+</body>
+</html>
